@@ -9,13 +9,13 @@
 	./boot.nix
 	./storage.nix
 	./network.nix
-	./sway.nix
+	#./sway.nix
 	./extra.nix
 	./packages.nix
 	./fonts.nix
 	./stable.nix
+	./gnome.nix
     ];
-
 
 
 	system.stateVersion = "26.05"; # Did you read the comment?

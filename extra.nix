@@ -7,9 +7,10 @@
     alsa.enable = true;
     alsa.support32Bit = true;
   };
-
-  nixpkgs.config.allowUnfree = true;
+  
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nixpkgs.config.allowUnfree = true;
+
   programs.gamemode.enable = true;
 
   services.scx = {

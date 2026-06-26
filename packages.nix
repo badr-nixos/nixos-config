@@ -3,10 +3,17 @@
   environment.systemPackages = with pkgs; [
 	git
     	wget
-    	kitty
-    	wmenu
-    	grim
-    	slurp
+
+    	#kitty
+    	#wmenu
+    	#grim
+    	#slurp
+	#hicolor-icon-theme 
+        #adwaita-icon-theme            #sway config
+        #p7zip
+        #lxqt.lxqt-policykit
+        #unrar
+
     	vesktop
     	btop
     	fastfetch
@@ -14,11 +21,6 @@
     	mesa-demos
     	lutris
     	ncdu
-    	hicolor-icon-theme
-    	adwaita-icon-theme
-    	p7zip
-	lxqt.lxqt-policykit
-	unrar
 	lunar-client
   ];
 }
