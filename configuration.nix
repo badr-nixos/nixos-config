@@ -9,12 +9,11 @@
 	./boot.nix
 	./storage.nix
 	./network.nix
-	#./sway.nix
+	./sway.nix
 	./extra.nix
 	./packages.nix
 	./fonts.nix
 	./stable.nix
-	./gnome.nix
     ];
 
 
