@@ -21,13 +21,18 @@
 
   security.polkit.enable = true;
   security.rtkit.enable = true;
+  programs.dconf.enable = true;
 
-  services.pipewire = {
+  programs.thunar = {
     enable = true;
-    pulse.enable = true;
-    alsa.enable = true;
-    alsa.support32Bit = true;
+    plugins = with pkgs; [
+      thunar-archive-plugin
+      thunar-volman
+    ];
   };
 
-  programs.dconf.enable = true;
+  services.gvfs.enable = true;
+  services.tumbler.enable = true;
+
+
 }
