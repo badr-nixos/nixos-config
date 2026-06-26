@@ -3,18 +3,16 @@
   environment.systemPackages = with pkgs; [
 	git
     	wget
-
     	kitty
     	wmenu
     	grim
     	slurp
 	hicolor-icon-theme 
-        adwaita-icon-theme            #sway config
+        adwaita-icon-theme
         p7zip
         lxqt.lxqt-policykit
         unrar
-
-    	vesktop
+    	#vesktop
     	btop
     	fastfetch
     	protonup-qt
