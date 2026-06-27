@@ -15,8 +15,7 @@
 	file-roller 
 	rofi 
 	awww
-	glib
-   	#vesktop
+	waybar
     	btop
     	fastfetch
     	protonup-qt
