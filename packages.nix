@@ -10,7 +10,7 @@
 	hicolor-icon-theme 
         adwaita-icon-theme
         p7zip
-        lxqt.lxqt-policykit
+        #lxqt.lxqt-policykit
         unrar
 	file-roller 
 	rofi 

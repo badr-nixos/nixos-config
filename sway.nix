@@ -19,23 +19,29 @@
 #    config.common.default = [ "wlr" "gtk" ];
 #  };
 
-
-  programs.hyprland.enable = true;
+programs.hyprland = {
+  enable = true;
+  xwayland.enable = true;
+};
 
 environment.sessionVariables = {
   XCURSOR_THEME = "Dot-Light";
   XCURSOR_SIZE = "16";
+  AMD_VULKAN_ICD = "RADV";
+  NIXOS_OZONE_WL = "1";
+  GDK_BACKEND = "wayland,x11";
 };
   
-  xdg.portal = {
+ xdg.portal = {
     enable = true;
     extraPortals = [ 
       pkgs.xdg-desktop-portal-gtk 
       pkgs.xdg-desktop-portal-hyprland 
     ];
-    config.common.default = [ "hyprland" "gtk" ];
- };
-
+    config.common = {
+      default = [ "hyprland" "gtk" ];
+    };
+  };
 
   security.polkit.enable = true;
   security.rtkit.enable = true;
