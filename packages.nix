@@ -4,7 +4,7 @@
 	git
     	wget
     	kitty
-    	wmenu
+    	#wmenu
     	grim
     	slurp
 	hicolor-icon-theme 
@@ -12,7 +12,9 @@
         p7zip
         lxqt.lxqt-policykit
         unrar
-    	#vesktop
+	file-roller 
+	rofi 
+   	#vesktop
     	btop
     	fastfetch
     	protonup-qt

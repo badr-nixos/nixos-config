@@ -1,23 +1,37 @@
 { pkgs, ... }:
 {
-  programs.sway = {
-    enable = true;
-    wrapperFeatures.gtk = true;
-    extraPackages = [];
-  };
+#  programs.sway = {
+#    enable = true;
+#    wrapperFeatures.gtk = true;
+#    extraPackages = [];
+#  };
 
+#  xdg.portal = {
+#    enable = true;
+#    wlr = {
+#      enable = true;
+#      settings.screencast = {
+#        chooser_type = "dmenu";
+#        chooser_cmd = "${pkgs.wmenu}/bin/wmenu";
+#      };
+#    };
+#    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+#    config.common.default = [ "wlr" "gtk" ];
+#  };
+
+
+  programs.hyprland.enable = true;
+
+  
   xdg.portal = {
     enable = true;
-    wlr = {
-      enable = true;
-      settings.screencast = {
-        chooser_type = "dmenu";
-        chooser_cmd = "${pkgs.wmenu}/bin/wmenu";
-      };
-    };
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-    config.common.default = [ "wlr" "gtk" ];
-  };
+    extraPortals = [ 
+      pkgs.xdg-desktop-portal-gtk 
+      pkgs.xdg-desktop-portal-hyprland 
+    ];
+    config.common.default = [ "hyprland" "gtk" ];
+ };
+
 
   security.polkit.enable = true;
   security.rtkit.enable = true;
