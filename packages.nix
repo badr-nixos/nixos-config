@@ -14,6 +14,8 @@
         unrar
 	file-roller 
 	rofi 
+	awww
+	glib
    	#vesktop
     	btop
     	fastfetch

@@ -22,6 +22,10 @@
 
   programs.hyprland.enable = true;
 
+environment.sessionVariables = {
+  XCURSOR_THEME = "Dot-Light";
+  XCURSOR_SIZE = "16";
+};
   
   xdg.portal = {
     enable = true;
