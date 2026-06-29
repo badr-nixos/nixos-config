@@ -12,8 +12,6 @@
   nixpkgs.config.allowUnfree = true;
 
   programs.gamemode.enable = true;
-  services.power-profiles-daemon.enable = true;
-
 
   services.scx = {
     enable = true;

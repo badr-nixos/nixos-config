@@ -1,23 +1,5 @@
 { pkgs, ... }:
 {
-#  programs.sway = {
-#    enable = true;
-#    wrapperFeatures.gtk = true;
-#    extraPackages = [];
-#  };
-
-#  xdg.portal = {
-#    enable = true;
-#    wlr = {
-#      enable = true;
-#      settings.screencast = {
-#        chooser_type = "dmenu";
-#        chooser_cmd = "${pkgs.wmenu}/bin/wmenu";
-#      };
-#    };
-#    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-#    config.common.default = [ "wlr" "gtk" ];
-#  };
 
 programs.hyprland = {
   enable = true;
@@ -30,8 +12,9 @@ xdg.portal = {
   config.common.default = "*";
 };
 
-  security.polkit.enable = true;
+
   security.rtkit.enable = true;
+  security.polkit.enable = true;
   programs.dconf.enable = true;
 
   programs.thunar = {

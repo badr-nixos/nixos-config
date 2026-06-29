@@ -8,9 +8,6 @@
     	kitty
     	grim
     	slurp
-	hicolor-icon-theme 
-        adwaita-icon-theme
-        _7zz
         unar
 	file-roller 
 	rofi 
