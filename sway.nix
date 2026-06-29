@@ -13,7 +13,6 @@ xdg.portal = {
 };
 
 
-  security.rtkit.enable = true;
   security.polkit.enable = true;
   programs.dconf.enable = true;
 
