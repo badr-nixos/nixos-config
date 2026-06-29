@@ -14,7 +14,6 @@
         unar
 	file-roller 
 	rofi 
-	awww
 	waybar
     	btop
     	fastfetch
@@ -22,5 +21,7 @@
     	lutris
     	ncdu
 	lunar-client
+	linux-wallpaperengine
+	vesktop
   ];
 }
