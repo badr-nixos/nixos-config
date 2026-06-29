@@ -27,7 +27,6 @@ programs.hyprland = {
 environment.sessionVariables = {
   XCURSOR_THEME = "Bibata-Modern-Ice";
   XCURSOR_SIZE = "16";
-  AMD_VULKAN_ICD = "RADV";
   NIXOS_OZONE_WL = "1";
   GDK_BACKEND = "wayland,x11";
 };
