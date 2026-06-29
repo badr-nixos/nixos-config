@@ -23,12 +23,6 @@ programs.hyprland = {
   enable = true;
   xwayland.enable = true;
 };
-
-environment.sessionVariables = {
-  XCURSOR_THEME = "Bibata-Modern-Ice";
-  XCURSOR_SIZE = "16";
-  NIXOS_OZONE_WL = "1";
-};
   
 xdg.portal = {
   enable = true;
