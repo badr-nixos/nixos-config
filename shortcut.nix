@@ -9,8 +9,9 @@
     # Fixed spelling: optimize (with a 'z')
     nix-clean  = "sudo nix-collect-garbage -d && sudo nix store optimise";
 
-    # Stable Nix Shell (Pulls from 26.05 Stable branch)
-    nix-shell-stable = "nix shell github:NixOS/nixpkgs/nixos-26.05#";
+    # 
+    nix-shell-stable = "nix shell github:NixOS/nixpkgs/nixos-26.05#legacyPackages.x86_64-linux.";
+
 
     # Quick Git Commands
     gadd  = "cd /etc/nixos && sudo git add .";
