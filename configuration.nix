@@ -14,6 +14,7 @@
 	./packages.nix
 	./fonts.nix
 	./stable.nix
+	./shortcut.nix
     ];
 
 
