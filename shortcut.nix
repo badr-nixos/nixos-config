@@ -5,8 +5,8 @@
     nix-rebuild = "sudo nixos-rebuild switch --flake /etc/nixos#nixos";
     nix-clean   = "sudo nix-collect-garbage -d && sudo nix store optimise";
     gadd  = "cd /etc/nixos && sudo git add .";
-    glog  = "cd /etc/nixos && sudo git log --oneline";
-    gpush = "cd /etc/nixos && sudo git push";
+    glog  = "cd /etc/nixos && sudo git log --oneline && cd";
+    gpush = "cd /etc/nixos && sudo git push && cd";
     gcm   = "cd /etc/nixos && sudo git commit -am";
   };
 
