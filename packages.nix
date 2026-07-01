@@ -19,6 +19,6 @@
     	ncdu
 	lunar-client
 	linux-wallpaperengine
-	vesktop
+#	vesktop
   ];
 }
