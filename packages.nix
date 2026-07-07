@@ -22,5 +22,7 @@
 	papirus-icon-theme
 	adwaita-icon-theme
   	gnome-themes-extra
+	glib
+	gsettings-desktop-schemas
   ];
 }
