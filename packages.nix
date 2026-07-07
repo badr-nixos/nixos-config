@@ -3,7 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
 	bottles
-	wineWow64Packages.stable	
+	wineWow64Packages.stagingFull
 	protontricks
 	git
     	kitty
