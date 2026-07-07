@@ -26,5 +26,10 @@
   };
   services.tumbler.enable = true;
 
+environment.variables = {
+  XCURSOR_THEME = "phinger-cursors-dark";
+  XCURSOR_SIZE = "24";
+};
+
 
 }

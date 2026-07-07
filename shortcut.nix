@@ -10,15 +10,14 @@
     gcm   = "cd /etc/nixos && sudo git commit -am";
   };
 
-  environment.interactiveShellInit = ''
-    nix-shell-stable() {
-      nix shell "github:NixOS/nixpkgs/nixos-26.05#$1"
-    }
-    nix-shell-unstable() {
-      nix shell "nixpkgs#$1"
-    }
-
-  '';
+environment.interactiveShellInit = ''
+  nix-shell-stable() {
+    NIXPKGS_ALLOW_UNFREE=1 nix shell --impure "github:NixOS/nixpkgs/nixos-26.05#$1" "''${@:2}"
+  }
+  nix-shell-unstable() {
+    NIXPKGS_ALLOW_UNFREE=1 nix shell --impure "nixpkgs#$1" "''${@:2}"
+  }
+'';
 
   programs.git = {
     enable = true;
