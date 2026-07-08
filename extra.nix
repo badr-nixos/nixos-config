@@ -35,6 +35,9 @@
   programs.firefox.enable = true;
 
   services.flatpak.enable = true;
+ 
+  services.lact.enable = true;
+  powerManagement.cpuFreqGovernor = "performance";
 
   programs.gamescope.enable = true;
   programs.steam = {
@@ -50,6 +53,7 @@
   
   environment.variables.XDG_DATA_DIRS = [
   "${pkgs.gsettings-desktop-schemas}/share/gsettings-schemas/${pkgs.gsettings-desktop-schemas.name}"
+
 ];
 
 }

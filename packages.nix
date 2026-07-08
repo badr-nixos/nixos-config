@@ -24,5 +24,6 @@
   	gnome-themes-extra
 	glib
 	gsettings-desktop-schemas
+	mangohud
   ];
 }
