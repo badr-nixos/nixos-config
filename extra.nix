@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
 
-
+  systemd.oomd.enable = false;
   boot.kernel.sysctl = {
   "vm.vfs_cache_pressure" = 50;
  };
