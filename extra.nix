@@ -1,6 +1,12 @@
 { pkgs, ... }:
 {
 
+
+  boot.kernel.sysctl = {
+  "vm.vfs_cache_pressure" = 50;
+ };
+
+
   security.polkit.enable = true;  
   security.rtkit.enable = true;
   services.pipewire = {
@@ -38,8 +44,9 @@
  
   services.lact.enable = true;
   powerManagement.cpuFreqGovernor = "performance";
-
-  programs.gamescope.enable = true;
+  hardware.amdgpu.overdrive.enable = true;
+ 
+ programs.gamescope.enable = true;
   programs.steam = {
     enable = true;
     remotePlay.openFirewall = true;
