@@ -1,6 +1,10 @@
 { pkgs, ... }:
 {
 
+services.lact.enable = true;
+hardware.amdgpu.overdrive.enable = true;
+
+
   systemd.oomd.enable = false;
   boot.kernel.sysctl = {
   "vm.vfs_cache_pressure" = 50;
@@ -20,6 +24,8 @@
   nixpkgs.config.allowUnfree = true;
 
   programs.gamemode.enable = true;
+
+  powerManagement.cpuFreqGovernor = "performance";
 
   services.scx = {
     enable = true;
@@ -41,10 +47,6 @@
   programs.firefox.enable = true;
 
   services.flatpak.enable = true;
- 
-  services.lact.enable = true;
-  powerManagement.cpuFreqGovernor = "performance";
-  hardware.amdgpu.overdrive.enable = true;
  
  programs.gamescope.enable = true;
   programs.steam = {
