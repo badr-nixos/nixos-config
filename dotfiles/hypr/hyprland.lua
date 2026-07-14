@@ -103,25 +103,39 @@ hl.device({
 })
 --
 })
-hl.curve("modernStandard", { type = "bezier", points = { {0.23, 1.0}, {0.32, 1.0} } })
-hl.curve("cleanRetraction", { type = "bezier", points = { {0.40, 1.0}, {0.18, 1.0} } })
+hl.curve("glide", {
+    type = "bezier",
+    points = {
+        { 0.18, 1.0 },
+        { 0.30, 1.0 },
+    },
+})
 
-hl.animation({ leaf = "global",      enabled = true, speed = 4.7, bezier = "modernStandard" })
-hl.animation({ leaf = "windows",     enabled = true, speed = 5.2, bezier = "modernStandard" })
-hl.animation({ leaf = "windowsIn",   enabled = true, speed = 4.8, bezier = "modernStandard", style = "popin 98%" })
-hl.animation({ leaf = "windowsOut",  enabled = true, speed = 4.3, bezier = "cleanRetraction", style = "popin 96%" })
-hl.animation({ leaf = "windowsMove", enabled = true, speed = 5.2, bezier = "modernStandard" })
+hl.curve("glideOut", {
+    type = "bezier",
+    points = {
+        { 0.30, 1.0 },
+        { 0.18, 1.0 },
+    },
+})
 
-hl.animation({ leaf = "fadeIn",      enabled = true, speed = 3.4, bezier = "cleanRetraction" })
-hl.animation({ leaf = "fadeOut",     enabled = true, speed = 3.0, bezier = "cleanRetraction" })
-hl.animation({ leaf = "fadeSwitch",  enabled = true, speed = 2.8, bezier = "cleanRetraction" })
-hl.animation({ leaf = "fadeDim",     enabled = true, speed = 4.0, bezier = "cleanRetraction" })
+hl.animation({ leaf = "global",      enabled = true, speed = 4.9, bezier = "glide" })
 
-hl.animation({ leaf = "border",      enabled = true, speed = 3.4, bezier = "cleanRetraction" })
-hl.animation({ leaf = "borderangle", enabled = true, speed = 3.4, bezier = "cleanRetraction" })
+hl.animation({ leaf = "windows",     enabled = true, speed = 5.3, bezier = "glide" })
+hl.animation({ leaf = "windowsIn", enabled = false })
+hl.animation({ leaf = "windowsOut", enabled = false })
+hl.animation({ leaf = "windowsMove", enabled = true, speed = 5.4, bezier = "glide" })
 
-hl.animation({ leaf = "workspaces",  enabled = true, speed = 4.7, bezier = "modernStandard", style = "slide" })
-hl.animation({ leaf = "layers",      enabled = true, speed = 4.7, bezier = "modernStandard", style = "slide" })
+hl.animation({ leaf = "fadeIn",      enabled = true, speed = 4.4, bezier = "glide" })
+hl.animation({ leaf = "fadeOut",     enabled = true, speed = 4.2, bezier = "glideOut" })
+hl.animation({ leaf = "fadeSwitch",  enabled = true, speed = 4.0, bezier = "glideOut" })
+hl.animation({ leaf = "fadeDim",     enabled = true, speed = 4.4, bezier = "glide" })
+
+hl.animation({ leaf = "border",      enabled = true, speed = 4.3, bezier = "glide" })
+hl.animation({ leaf = "borderangle", enabled = true, speed = 4.3, bezier = "glide" })
+
+hl.animation({ leaf = "workspaces",  enabled = true, speed = 5.4, bezier = "glide", style = "slide" })
+hl.animation({ leaf = "layers",      enabled = true, speed = 5.0, bezier = "glide", style = "slide" })
 
 
 hl.on("hyprland.start", function()
