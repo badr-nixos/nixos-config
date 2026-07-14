@@ -1,0 +1,48 @@
+* {
+    font-family: "Inter Variable", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    min-height: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+}
+
+label {
+    font: inherit;
+}
+window#waybar {
+  background: rgba(0, 0, 0, 1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.7);
+}
+#custom-nixos {
+  padding: 0 12px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-family: "JetBrainsMono Nerd Font";
+}
+#workspaces button {
+  padding: 3px 8px;
+  border-radius: 3px;
+  color: rgba(255, 255, 255, 0.2);
+  background: transparent;
+  min-width: 0;
+}
+#workspaces button.occupied {
+  color: rgba(255, 255, 255, 0.45);
+}
+#workspaces button.active {
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.1);
+}
+#clock {
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.08em;
+  padding: 0 12px;
+}
+#tray {
+  padding: 0 12px;
+  opacity: 0.35;
+}

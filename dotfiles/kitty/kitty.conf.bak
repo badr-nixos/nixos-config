@@ -1,0 +1,83 @@
+# ==========================================
+# 💎 MODERN KITTY CONFIGURATION
+# ==========================================
+
+# Performance settings for 165Hz monitor
+repaint_delay 6
+input_delay 1
+
+
+# --- 🎯 Transparency & Background ---
+background_opacity         0.75
+# background                 #000000
+# foreground                 #cdd6f4
+
+# --- 🔤 Typography (Nerd Font Required) ---
+font_family                JetBrainsMono Nerd Font
+font_size                  14.0
+bold_font                  auto
+italic_font                auto
+bold_italic_font           auto
+disable_ligatures          never
+
+# --- 🏃✨ Modern Cursor Trail (Kitty V0.30+) ---
+# cursor                     #f5c2e7
+# cursor_text_color          #11111b
+cursor_shape               beam
+cursor_blink_interval      0.5
+cursor_trail               3
+cursor_trail_decay         0.1 0.4
+
+# --- 🪟 Window Padding & Layout ---
+window_padding_width       20
+hide_window_decorations    yes
+remember_window_size       no
+initial_window_width       950
+initial_window_height      550
+
+# --- 🔖 Minimal Tab Bar ---
+tab_bar_edge               bottom
+tab_bar_style              fade
+tab_fade                   0.25 0.5 0.75 1
+# active_tab_foreground      #11111b
+# active_tab_background      #c9a0dc
+# inactive_tab_foreground    #bac2de
+# inactive_tab_background    #181825
+
+# --- 🎨 Color Palette (Catppuccin Mocha Variant) ---
+# Black / Gray
+# color0  #45475a
+# color8  #585b70
+# Red
+# color1  #f38ba8
+# color9  #f38ba8
+# Green
+# color2  #a6e3a1
+# color10 #a6e3a1
+# Yellow
+# color3  #f9e2af
+# color11 #f9e2af
+# Blue
+# color4  #89b4fa
+# color12 #89b4fa
+# Magenta (Pink Accent)
+# color5  #f5c2e7
+# color13 #f5c2e7
+# Cyan
+# color6  #94e2d5
+# color14 #94e2d5
+# White
+# color7  #bac2de
+# color15 #a6adc8
+
+# --- ⚙️ System Tweaks ---
+scrollback_lines           10000
+enable_audio_bell          no
+confirm_os_window_close    0
+
+
+
+# BEGIN_KITTY_THEME
+# 3024 Night
+include current-theme.conf
+# END_KITTY_THEME

@@ -1,0 +1,105 @@
+configuration {
+    font: "Inter SemiBold 13";
+    show-icons:          true;
+    icon-theme:          "Papirus-Dark";
+    drun-display-format: "{name}";
+    display-drun:        " ";
+    display-run:         " ";
+
+    /* Strict alphabetical settings */
+    disable-history:     true;
+    sort:                false;
+    matching-neg-sort:   true;
+}
+
+* {
+    bg:               #000000ff;
+    bg-alt:           #0d0d0dff;
+    fg:               #d7d5ceff;
+    accent:           #d8b07aff;
+    accent-fg:        #000000ff;
+
+    background-color: transparent;
+    text-color:       @fg;
+    border-color:     @accent;
+}
+
+window {
+    background-color: @bg;
+    border:           3px solid;
+    border-radius:    12px;
+    width:            440px;
+    location:         center;
+    anchor:           center;
+}
+
+mainbox {
+    background-color: @bg;
+    children:         [ inputbar, listview ];
+    padding:          10px;
+    spacing:          8px;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    border-radius:    8px;
+    padding:          10px 14px;
+    spacing:          8px;
+    children:         [ prompt, entry ];
+}
+
+prompt {
+    background-color: transparent;
+    text-color:       @accent;
+}
+
+entry {
+    background-color: transparent;
+    text-color:       @fg;
+    placeholder:      "search...";
+    placeholder-color:#6f675cff;
+}
+
+listview {
+    background-color: transparent;
+    lines:            8;
+    fixed-height:     true;
+    scrollbar:        false;
+    spacing:          2px;
+}
+
+element {
+    background-color: transparent;
+    text-color:       @fg;
+    padding:          8px 10px;
+    border-radius:    6px;
+    spacing:          8px;
+    orientation:      horizontal;
+    children:         [ element-icon, element-text ];
+}
+
+element normal.normal {
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @fg;
+}
+
+element selected.normal {
+    background-color: @accent;
+    text-color:       @accent-fg;
+}
+
+element-icon {
+    background-color: transparent;
+    size:             20px;
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    vertical-align:   0.5;
+}

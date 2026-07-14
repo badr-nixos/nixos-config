@@ -1,0 +1,26 @@
+{
+  "layer": "top",
+  "position": "top",
+  "spacing": 0,
+  "modules-left": ["custom/nixos", "hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray"],
+  "custom/nixos": {
+    "format": "󱄅",
+    "tooltip": false
+  },
+  "hyprland/workspaces": {
+    "format": "●",
+    "on-click": "activate",
+    "sort-by-number": true,
+    "all-outputs": false
+  },
+  "clock": {
+    "format": "{:%a %d %b  %H:%M}",
+    "tooltip": false
+  },
+  "tray": {
+    "spacing": 8,
+    "icon-size": 14
+  }
+}
