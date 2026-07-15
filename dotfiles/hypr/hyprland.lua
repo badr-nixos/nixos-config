@@ -110,7 +110,6 @@ hl.curve("glide", {
         { 0.30, 1.0 },
     },
 })
-
 hl.curve("glideOut", {
     type = "bezier",
     points = {
@@ -118,22 +117,17 @@ hl.curve("glideOut", {
         { 0.18, 1.0 },
     },
 })
-
 hl.animation({ leaf = "global",      enabled = true, speed = 4.9, bezier = "glide" })
-
 hl.animation({ leaf = "windows",     enabled = true, speed = 5.3, bezier = "glide" })
 hl.animation({ leaf = "windowsIn", enabled = false })
 hl.animation({ leaf = "windowsOut", enabled = false })
 hl.animation({ leaf = "windowsMove", enabled = true, speed = 5.4, bezier = "glide" })
-
 hl.animation({ leaf = "fadeIn",      enabled = true, speed = 4.4, bezier = "glide" })
 hl.animation({ leaf = "fadeOut",     enabled = true, speed = 4.2, bezier = "glideOut" })
 hl.animation({ leaf = "fadeSwitch",  enabled = true, speed = 4.0, bezier = "glideOut" })
 hl.animation({ leaf = "fadeDim",     enabled = true, speed = 4.4, bezier = "glide" })
-
 hl.animation({ leaf = "border",      enabled = true, speed = 4.3, bezier = "glide" })
 hl.animation({ leaf = "borderangle", enabled = true, speed = 4.3, bezier = "glide" })
-
 hl.animation({ leaf = "workspaces",  enabled = true, speed = 5.4, bezier = "glide", style = "slide" })
 hl.animation({ leaf = "layers",      enabled = true, speed = 5.0, bezier = "glide", style = "slide" })
 
