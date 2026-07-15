@@ -84,7 +84,7 @@ input * {
     repeat_delay 200
     repeat_rate 40
 }
-#output * bg /mnt/m2/wallpapers/lain.jpg fill
+#output * bg /mnt/m2/wallpapers/lain00.jpg fill
 output * max_render_time 1
 output * allow_tearing yes
 #

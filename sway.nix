@@ -4,7 +4,7 @@
 programs.sway = {
   enable = true;
   wrapperFeatures.gtk = true;
-  extraPackages = with pkgs; [ wmenu ];
+  extraPackages = with pkgs; [ wmenu swaybg ];
 };
 
 programs.uwsm = {
