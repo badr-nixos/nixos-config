@@ -1,18 +1,40 @@
 { pkgs, ... }:
 {
  
+programs.sway = {
+  enable = true;
+  wrapperFeatures.gtk = true;
+  extraPackages = with pkgs; [ wmenu ];
+};
 
- programs.hyprland = {
-    enable = true;
-    withUWSM = true;
-    xwayland.enable = true;
+programs.uwsm = {
+  enable = true;
+  waylandCompositors = {
+    sway = {
+      prettyName = "Sway";
+      comment = "Sway compositor managed by UWSM";
+      binPath = "/run/current-system/sw/bin/sway";
+    };
   };
+};
 
-  xdg.portal = {
-    enable = true;
-    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
-    config.common.default = [ "hyprland" "gtk" ];
-  };
+xdg.portal = {
+  enable = true;
+  wlr.enable = true;
+  config.common.default = "*";
+};
+
+# programs.hyprland = {
+#    enable = true;
+#    withUWSM = true;
+#    xwayland.enable = true;
+#  };
+#
+#  xdg.portal = {
+#    enable = true;
+#    extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+#    config.common.default = [ "hyprland" "gtk" ];
+#  };
 
 	services.gvfs.enable = true;
         programs.dconf.enable = true;

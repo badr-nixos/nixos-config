@@ -10,8 +10,8 @@
     	grim
     	slurp
 	file-roller 
-	rofi 
-	waybar
+#	rofi 
+#	waybar
     	btop
     	fastfetch
     	protonup-qt

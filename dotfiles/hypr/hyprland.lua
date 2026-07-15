@@ -1,6 +1,6 @@
 hl.monitor({
     output   = "DP-2",
-    mode     = "3440x1440@165",
+    mode     = "3440x1440@165, bitdepth, 10",
     position = "0x0",
     scale    = 1,
     vrr      = 2,
@@ -12,8 +12,8 @@ hl.env("XCURSOR_PATH", "/home/badr/.local/share/icons/")
 -- GENERAL / DECORATION / INPUT / MISC
 hl.config({
     general = {
-        gaps_in          = 14,
-        gaps_out         = 28,
+        gaps_in          = 10,
+        gaps_out         = 20,
         border_size      = 3,
         resize_on_border = true,
         allow_tearing    = true,
