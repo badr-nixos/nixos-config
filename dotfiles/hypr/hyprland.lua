@@ -12,8 +12,8 @@ hl.env("XCURSOR_PATH", "/home/badr/.local/share/icons/")
 -- GENERAL / DECORATION / INPUT / MISC
 hl.config({
     general = {
-        gaps_in          = 8,
-        gaps_out         = 16,
+        gaps_in          = 14,
+        gaps_out         = 28,
         border_size      = 3,
         resize_on_border = true,
         allow_tearing    = true,
@@ -25,7 +25,7 @@ hl.config({
   },
 
   master = {
-    mfact                 = 0.5674,
+    mfact                 = 0.5733,
     new_on_top            = false,
     orientation           = "left",
     smart_resizing        = true,
