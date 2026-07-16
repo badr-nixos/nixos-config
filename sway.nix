@@ -51,6 +51,7 @@ xdg.portal = {
 environment.variables = {
   XCURSOR_THEME = "phinger-cursors-dark";
   XCURSOR_SIZE = "24";
+  NIXOS_OZONE_WL = "1";
 };
 
 

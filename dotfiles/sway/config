@@ -4,7 +4,7 @@ set $left h
 set $down j
 set $up k
 set $right l
-set $term kitty
+set $term footclient
 set $menu wmenu-run -f "Inter 10" -N 000000 -n ffffff -M 000000 -m ffffff -S ffffff -s 000000
 font pango:Inter 13
 # Keybindings & Basics
@@ -119,3 +119,4 @@ exec gsettings set org.gnome.desktop.interface document-font-name "Inter 13"
 #
 #exec dbus-update-activation-environment --systemd DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
 exec exec uwsm finalize SWAYSOCK I3SOCK XCURSOR_SIZE XCURSOR_THEME
+exec foot --server

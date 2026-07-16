@@ -2,11 +2,10 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-	bottles
+#	bottles
 	wineWow64Packages.stagingFull
 	protontricks
 	git
-    	kitty
     	grim
     	slurp
 	file-roller 
@@ -25,5 +24,6 @@
 	glib
 	gsettings-desktop-schemas
 	mangohud
+	foot
   ];
 }
