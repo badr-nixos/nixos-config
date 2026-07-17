@@ -26,8 +26,8 @@ xdg.portal = {
 
 xdg.portal.wlr.settings = {
   screencast = {
-    chooser_type = "simple";
-    chooser_cmd = "wmenu-run";
+    chooser_type = "dmenu";
+    chooser_cmd = "${pkgs.wmenu}/bin/wmenu -p SelectOutput -f \"Inter 10\" -N 000000 -n ffffff -M 000000 -m ffffff -S ffffff -s 000000";
   };
 };
 
