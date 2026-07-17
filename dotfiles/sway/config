@@ -118,5 +118,6 @@ exec gsettings set org.gnome.desktop.interface font-name "Inter 13"
 exec gsettings set org.gnome.desktop.interface document-font-name "Inter 13"
 #
 #exec dbus-update-activation-environment --systemd DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
-exec exec uwsm finalize SWAYSOCK I3SOCK XCURSOR_SIZE XCURSOR_THEME
+exec exec uwsm finalize SWAYSOCK I3SOCK XCURSOR_SIZE XCURSOR_THEME WAYLAND_DISPLAY XDG_CURRENT_DESKTOP XDG_SESSION_TYPE
+
 exec foot --server

@@ -24,6 +24,13 @@ xdg.portal = {
   config.common.default = "*";
 };
 
+xdg.portal.wlr.settings = {
+  screencast = {
+    chooser_type = "simple";
+    chooser_cmd = "wmenu-run";
+  };
+};
+
 # programs.hyprland = {
 #    enable = true;
 #    withUWSM = true;

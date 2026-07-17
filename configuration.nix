@@ -15,6 +15,7 @@
 	./fonts.nix
 	./stable.nix
 	./shortcut.nix
+	./dotfiles.nix
     ];
 
 
