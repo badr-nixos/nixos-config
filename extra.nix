@@ -33,14 +33,6 @@ hardware.amdgpu.overdrive.enable = true;
     extraArgs = [ "--performance" ];
   };
 
-  nix = {
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 14d";
-    };
-    optimise.automatic = true;
-  };
 
   boot.kernelPackages = pkgs.linuxPackages_cachyos;
 
