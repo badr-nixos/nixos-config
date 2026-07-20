@@ -2,6 +2,7 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
+	vesktop
 #	bottles
 	wineWow64Packages.stagingFull
 	protontricks
@@ -25,5 +26,9 @@
 	gsettings-desktop-schemas
 	mangohud
 	foot
+	prismlauncher
+	openjdk8
+	openjdk17
+
   ];
 }
