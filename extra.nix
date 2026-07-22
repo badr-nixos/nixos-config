@@ -1,6 +1,10 @@
 { pkgs, ... }:
 {
 
+
+  boot.kernelPackages = pkgs.linuxPackages_latest;
+
+
 services.lact.enable = true;
 hardware.amdgpu.overdrive.enable = true;
 
@@ -27,14 +31,6 @@ hardware.amdgpu.overdrive.enable = true;
 
   powerManagement.cpuFreqGovernor = "performance";
 
-  services.scx = {
-    enable = true;
-    scheduler = "scx_lavd";
-    extraArgs = [ "--performance" ];
-  };
-
-
-  boot.kernelPackages = pkgs.linuxPackages_cachyos;
 
   programs.firefox.enable = true;
 
