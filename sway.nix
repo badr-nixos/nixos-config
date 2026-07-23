@@ -21,6 +21,7 @@ programs.uwsm = {
 xdg.portal = {
   enable = true;
   wlr.enable = true;
+  extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
   config.common.default = "*";
 };
 
@@ -43,23 +44,29 @@ xdg.portal.wlr.settings = {
 #    config.common.default = [ "hyprland" "gtk" ];
 #  };
 
-	services.gvfs.enable = true;
-        programs.dconf.enable = true;
+services.gvfs.enable = true;
+programs.dconf.enable = true;
 
-  programs.thunar = {
-    enable = true;
-    plugins = with pkgs; [
-     thunar-archive-plugin
-     thunar-volman
-    ];
+programs.dconf.profiles.user.databases = [{
+  settings."org/gnome/desktop/applications/terminal" = {
+    exec = "footclient";
   };
-  services.tumbler.enable = true;
+}];
 
-environment.variables = {
+programs.thunar = {
+  enable = true;
+  plugins = with pkgs; [
+    thunar-archive-plugin
+    thunar-volman
+  ];
+};
+
+services.tumbler.enable = true;
+
+environment.sessionVariables = {
   XCURSOR_THEME = "phinger-cursors-dark";
   XCURSOR_SIZE = "24";
   NIXOS_OZONE_WL = "1";
 };
-
 
 }
