@@ -10,8 +10,8 @@
     	grim
     	slurp
 	file-roller 
-#	rofi 
-#	waybar
+	rofi 
+	waybar
     	btop
     	fastfetch
     	protonup-qt
@@ -25,10 +25,11 @@
 	glib
 	gsettings-desktop-schemas
 	mangohud
-	foot
+#	foot
 	prismlauncher
 	openjdk8
 	openjdk17
-
+	kitty
+	(python3.withPackages (ps: [ ps.i3ipc ]))
   ];
 }

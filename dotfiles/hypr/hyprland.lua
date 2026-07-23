@@ -12,15 +12,15 @@ hl.env("XCURSOR_PATH", "/home/badr/.local/share/icons/")
 -- GENERAL / DECORATION / INPUT / MISC
 hl.config({
     general = {
-        gaps_in          = 10,
-        gaps_out         = 20,
+        gaps_in          = 5,
+        gaps_out         = 10,
         border_size      = 3,
         resize_on_border = true,
         allow_tearing    = true,
         layout           = "master",
         col = {
-		active_border   = "rgb(D8B07A)",
-		inactive_border = "rgb(44403C)",
+		active_border   = "rgb(2a2e3f)",
+		inactive_border = "rgb(0d0d0d)",
         },
   },
 
@@ -82,6 +82,7 @@ hl.config({
         disable_hyprland_logo   = true,
         force_default_wallpaper = 0,
 	disable_splash_rendering = true,
+        background_color = 0x000000,
 	initial_workspace_tracking = 1
     },
 
@@ -134,7 +135,7 @@ hl.animation({ leaf = "workspaces",       enabled = true,  speed = 5.5, bezier =
 
 hl.on("hyprland.start", function()
     hl.exec_cmd("waybar")
-    hl.exec_cmd("sleep 2 && linux-wallpaperengine --assets-dir /mnt/m2/SteamLibrary/steamapps/common/wallpaper_engine/assets --screen-root DP-2 /mnt/m2/SteamLibrary/steamapps/workshop/content/431960/2286810582/")
+--    hl.exec_cmd("sleep 2 && linux-wallpaperengine --assets-dir /mnt/m2/SteamLibrary/steamapps/common/wallpaper_engine/assets --screen-root DP-2 /mnt/m2/SteamLibrary/steamapps/workshop/content/431960/2286810582/")
     hl.exec_cmd("gsettings set org.gnome.desktop.interface gtk-theme 'Adwaita-dark'")
     hl.exec_cmd("gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'")
     hl.exec_cmd("gsettings set org.gnome.desktop.interface cursor-theme 'phinger-cursors-dark'")

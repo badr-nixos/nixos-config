@@ -3,6 +3,7 @@ configuration {
     show-icons:          true;
     icon-theme:          "Papirus-Dark";
     drun-display-format: "{name}";
+    drun-match-fields:   "name";
     display-drun:        " ";
     display-run:         " ";
 
@@ -16,14 +17,12 @@ configuration {
     bg:               #000000ff;
     bg-alt:           #0d0d0dff;
     fg:               #d7d5ceff;
-    accent:           #d8b07aff;
-    accent-fg:        #000000ff;
-
+    accent:           #2a2e3fff;
+    accent-fg:        #d7d5ceff;
     background-color: transparent;
     text-color:       @fg;
     border-color:     @accent;
 }
-
 window {
     background-color: @bg;
     border:           3px solid;
@@ -42,6 +41,7 @@ mainbox {
 
 inputbar {
     background-color: @bg-alt;
+    border:           0px;
     border-radius:    8px;
     padding:          10px 14px;
     spacing:          8px;
@@ -55,6 +55,7 @@ prompt {
 
 entry {
     background-color: transparent;
+    border:           0px;
     text-color:       @fg;
     placeholder:      "search...";
     placeholder-color:#6f675cff;
@@ -62,6 +63,8 @@ entry {
 
 listview {
     background-color: transparent;
+    border:           2px 0px 0px 0px;
+    border-color:     @accent;
     lines:            8;
     fixed-height:     true;
     scrollbar:        false;
