@@ -25,7 +25,7 @@ hl.config({
   },
 
   master = {
-    mfact                 = 0.5733,
+    mfact                 = 0.565,
     new_on_top            = false,
     orientation           = "left",
     smart_resizing        = true,
